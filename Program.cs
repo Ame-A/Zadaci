@@ -15,35 +15,7 @@ namespace test1
 
             int input = int.Parse(Console.ReadLine());
 
-            /*double count = 1;
-
-            while (count != input + 1)
-            {
-
-                if (count % 3 == 0 && count % 5 == 0)
-                {
-                    Console.WriteLine($"Fizz buzz {count}");
-                    count++;
-
-                }
-                else if (count % 5 == 0)
-                {
-                    Console.WriteLine($"Buzz {count}");
-                    count++;
-
-                }
-                else if (count % 3 == 0)
-                {
-                    Console.WriteLine($"Fizz {count}");
-                    count++;
-
-                }
-                else
-                {
-                    Console.WriteLine(count);
-                    count++;
-                } */
-
+            //Fizz Buzz
             for (int i = 1; i <= input; i++)
             {
                 if (i % 3 == 0 && i % 5 == 0)
@@ -65,41 +37,40 @@ namespace test1
                 }
             }
 
-                   /* while (input != 1)
-                    {
-                        if (input % 2 == 0)
-                        {
-                            input /= 2;
-                            Console.WriteLine(input);
-                        }
-                        else
-                        {
-                            input = input * 3 + 1;
-                            Console.WriteLine(input);
-                        }
+            while (input != 1)
+            {
+                if (input % 2 == 0)
+                {
+                    input /= 2;
+                    Console.WriteLine(input);
+                }
+                else
+                {
+                    input = input * 3 + 1;
+                    Console.WriteLine(input);
+                }
 
-                    }
-                    int num1 = 1;
-                    int num2 = 0;
-                    int fibonachi = 0;
-                    while (fibonachi != input) {
-                        if (input > fibonachi) {
-                            Console.WriteLine($"Broj {input} nije u fibonacijevom nizu!");
-                            break;
-                        }
-                        fibonachi = num1 + num2;
-                        Console.WriteLine(fibonachi);
-                        num1 = num2;
-                        num2 = fibonachi;
+            }
+            //Fibonacci
+            int num1 = 1;
+            int num2 = 0;
+            int fibonacci = 0;
+            while (fibonacci != input)
+            {
+                if (input > fibonacci)
+                {
+                    Console.WriteLine($"Broj {input} nije u fibonacijevom nizu!");
+                    break;
+                }
+                fibonacci = num1 + num2;
+                Console.WriteLine(fibonacci);
+                num1 = num2;
+                num2 = fibonacci;
 
-                    } */
-                    Console.ReadKey();
-             
+            }
+            
+           Console.ReadKey();
 
         }
     }
 }
-
-   
-
-
